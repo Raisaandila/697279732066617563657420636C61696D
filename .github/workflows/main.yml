@@ -2,6 +2,9 @@ name: Irys Faucet
 
 on:
   workflow_dispatch:
+  push:
+   paths:
+     - data.txt
 jobs:
   start-bot:
     runs-on: ubuntu-latest
